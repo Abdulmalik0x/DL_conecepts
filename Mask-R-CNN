@@ -1,0 +1,5 @@
+Mask R-CNN had two main parts: 
+(1) a backbone that extracts features from an image with Residual Neural Network (ResNet), a CNN 50–101 layers deep [36], in combination with Feature Pyramid Network (FPN) 
+(2) a head that constructed a bounding box around a Region of Interest (ROI) and predicted the type of object in the box. The additional step of Mask R-CNN over Faster R-CNN constructed a mask for each ROI.
+
+The additional step of Mask R-CNN over Faster R-CNN constructed a mask for each ROI. In Mask R-CNN, after the backbone extracted features from an image, these features were input into a Region Proposal Network (RPN), which constructed anchor boxes of various sizes, that contained an object of interest and passed them to an ROI Extractor, that extracts the features from each ROI. Each ROI Map was forwarded to fully connected layers, consisting of two parallel components: the original components of Faster R-CNN for predicting bounding boxes and objects of interest (classification) and an additional component for predicting a mask in a bounding box.

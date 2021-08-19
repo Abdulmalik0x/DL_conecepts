@@ -1,0 +1,15 @@
+# Me
+It is a fully milti layer network unlike other networks. It uniqueness that i achives comperable accuracy to ViT with less parameters
+It's workig similar to ViT by:
+
+1- deviding the image into patches and pass it into fully connected layer.
+2- The FCL per patch will arrange the recognized features into specific channels and result a vector. (e.g. sharp corners channel 1), (Patch Multiplixer)
+3- The vectors will pass to mlp that do manupilation per pixel sizes, taking axes wise pixel per batch tansposed. (e.g. pixel one from all channels)
+4- Pass them again to shared MLP and transpose the resulted vector again.
+5- disaggregate the axes into their original vector shapes as patches.
+6- Shared MLP (1x1) and final classification.
+
+
+MLPs arch:
+
+- FCL - GELU activation - FCL 

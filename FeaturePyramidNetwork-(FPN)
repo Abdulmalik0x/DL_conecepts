@@ -1,0 +1,10 @@
+Feature Pyramid Network (FPN)
+
+
+It's two way network, in the begening feedforward network is pyramid blocks and each output block will be use later on the backward turn.
+
+- Bottom-Up Pathway: it's downscaling the img and each pyramid output will be use later.
+- Top-Down Pathway and Lateral Connection: the high or later features is upsampled (by a factor of 2 using the nearest neighbor) spatially coarser, but semantically stronger
+ Each lateral connection merges feature maps of the same spatial size from the bottom-up pathway and the top-down pathway.
+Specifically, the feature maps from bottom-up pathway undergoes 1×1 convolutions to reduce the channel dimensions.
+And the feature maps from the bottom-up pathway and the top-down pathway are merged by element-wise addition.

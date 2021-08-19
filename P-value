@@ -1,0 +1,11 @@
+What is P-value?
+
+“P” in P-value means the “Probability”- the probability that 67% vs 30% difference was *ONLY* BECAUSE OF SAMPLING RANDOMNESS, not because of the actual difference.
+Indicating that the Probability difference between sampled and actual data is *ONLY* BECAUSE OF SAMPLING RANDOMNESS, not because of the actual difference, supposing that the H0 is true.
+
+- Different def: Suppose the null hypothesis is true. How likely is it that a *fresh* set of data would give a result that is even more confident/extreme than yours at *rejecting* the null
+
+if p-value is small, aka below 0.05, we would reject the H0, meaning that the fresh data is similar to the rejected one
+
+Chi-square test statistic: A single number that tells you how much difference exists between your observed counts and the expected counts.
+

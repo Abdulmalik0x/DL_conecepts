@@ -1,0 +1,5 @@
+For large batches (in 1000's), gradient tend to osscilate which derain the model of utlizing many GPUs by distrubting the images across them, therefore, LCR comes to suggest that confugeration should encounter the increase number of mini batches by following rule:
+
+increase the learning rate by “k”times, where k is the number of 1000's
+
+Gradual warmup: As the name suggests , you start with a small learning rate and then gradually increase it by a constant for each epoch till it reaches “k times learning rate”

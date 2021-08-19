@@ -1,0 +1,3 @@
+Note about convex:
+
+convex hull is the smallest convex polygon that contains all the points in the set (may or may not be a convex set).

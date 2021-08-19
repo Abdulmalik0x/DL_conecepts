@@ -1,0 +1,17 @@
+Region Proposals in the begening introduced as a segmentation proposal that differentiate blobs (objects) after that passing them to bbox detector. It's replacable for sliding windows. due it's slowness, it improved to cnn extractor of specific shapes, after that passed to detector.
+
+It devides the image into multiple grids based on the reductions that took place (8, 16, 32) and ration of boxes (0.5, 1, 2) to be 9 boxes per grid.
+
+RPN uses a two-class classification
+
+RPN layer must learn to classify the anchor boxes as background or foreground, and calculate regression coefficients to modify the position, width, and height of the foreground anchor box .
+
+1- output an (1, M, N, k*2) matrix, that indicate for each postion in the M × N feature map the probability value that the candidate area contains an object or background
+2- outuput an (1, M, N, k*4) coordinate values, indicating the position of each candidate area.
+
+SO it will produce a list of objects' proposals
+
+RPN is size variant, therefore, RoI pooling being added on top of it to extract the regions in such a manner that overcome those issues.
+
+It take the proposed region coordinate with respect to feature map and devide those regions into specific grid e.g. 2x2, after that it does max pooling and pass those pooled values to further layes.
+

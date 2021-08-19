@@ -1,0 +1,10 @@
+JFIFTo obtain the class-discriminative localization map, Grad-CAM computes the gradient of yc (score for class c) with respect to feature maps A of a convolutional layer. these gradients flowing back are global-average-pooled to obtain the importance weights αck:
+
+
+The authors of Grad-CAM argue, “we can expect the last convolutional layers to have the best compromise between high-level semantics and detailed spatial information.”
+
+The only requirement is that the layers we insert after A1, A2, and A3 have to be differentiable so that we can get a gradient. Finally, we have our classification outputs for airplane, dog, cat, person, etc.
+
+The output of Grad-CAM is a “class-discriminative localization map”, i.e. a heatmap where the hot part corresponds to a particular class: 
+
+

@@ -1,0 +1,8 @@
+It devide the picture into grid as specified by user, each grid will have number of anchors within it, thus will yield tensor of (3,3 which is grid size, NO anchors, 5 which is x,y, w, h, c and number of classes)
+E.x. [PC, Bx, By, Bh, Bw, c1, c2, c3, PC, Bx, By, Bh, Bw, c1, c2, c3] # 2 number of anchor, Pc is the probability
+
+The anchors depict bounding box, the threshold of each bounding box will applied. 
+
+Non-max supression per class so the one with high IOU number will remain and others will be trimed.
+The triming will be if both bounding box have same class with high IOU.
+

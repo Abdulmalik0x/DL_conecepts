@@ -1,0 +1,1 @@
+In YOLACT, coefficient are per bunding box, so occluded object accross overlapped bbox hardly preserve the information of relevant segment within specific grid, which in turn SipMask come to solve the problem. It generate spatial coefficients which is a coefficient per grid within predicted bbox.

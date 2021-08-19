@@ -1,0 +1,1 @@
+CAM requires an architecture that applies global average pooling (GAP) to the final convolutional feature maps, followed by a single fully connected layer that produces the predictions:

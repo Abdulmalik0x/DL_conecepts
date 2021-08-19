@@ -1,0 +1,6 @@
+In RoI pooling, after getting the bbox of proposed objects, qunatization happen to get the offset location of each bbox, the rounding happeining is causing distortion 
+to the actual location by marginal distance if the area is not divisible by the booling factor later, here what RoI align is solving.
+
+It dividing the proposed bbox into small grids and doing intrpolation
+
+https://towardsdatascience.com/understanding-region-of-interest-part-2-roi-align-and-roi-warp-f795196fc193

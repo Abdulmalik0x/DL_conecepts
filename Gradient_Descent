@@ -1,0 +1,14 @@
+Desciding best parameters fit the data and minimize the sum of squared residualsis is the goal of gradient descent. 
+
+“Gradient descent is an iterative algorithm, that starts from a random point on a function and travels down its slope in steps until it reaches the lowest point of that function.”
+
+Process:
+
+1- Find best parameter that yeild high accuracy (minimize the sum of squared residuals).
+2- By nowing the location of this fit parameter location, we lean toward it by learning rate (number of steps).
+3- Updating the parameter by the difference between current parameter -+ (tep size = gradient * learning rate)
+4- Iterate till gradient ~ near 0.
+
+The update will be per image with respect to each parameter, 1000 iteration with 10 parameters would be 10000 computation which is consuming, here where stochastic come into play, instead of taking each image, stochastic doing random picking of images per epoch.
+
+Some further optimization came later like mini-batches, where stochastic stack picked data for optimization rather whole or single epoch optimization.

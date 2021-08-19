@@ -1,0 +1,8 @@
+It's a platform that utilize the CPUs in an innovative way to achive a performance comperable to GPUs and better.
+
+It's passing the networks on horizontal way instead of vertical way so that no need for parallelism, which eliminate the need of memory, just cache, you just need flops.
+
+It's being imitated as mind works:
+1- Sparsity (Pruning, cutt uneeded weights. Quantization, group weights into smalled scale and magnitudes)
+2- Locallity reference (nuerons call hit the nighbot nuerons).
+

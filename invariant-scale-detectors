@@ -1,0 +1,10 @@
+SSD:
+
+Would reuse the multi-scale featuremaps  from  different  layers  computed  in  the  forward  passand thus come free of cost, But to avoid using low-level feature SSD foregoes reusing already computed features in high resolution which make it miss the opportunity to detects small objects.
+
+
+
+FPN:
+
+It combines low-resolution, semantically strong features with high-resolution, semantically weak features via a top-down pathway and lateral connections.
+This feature pyramid that has rich semantics at all levels and is built quickly from a single input image scale, thereby without sacrificing representational power, speed, or memory. Some concurrent works like DSSD also use this approach.

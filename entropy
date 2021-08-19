@@ -1,0 +1,15 @@
+Entropy: Calculate how much uncertainty of information within a set of events.
+
+Calculate independent series of probabilitiy as usual is multuplication of their probabilities, this will yeild low prob as number < 1, also high sensetive to small variation of numbers.
+
+To solve it, we take the log of each event proba, and sum them together .. 
+
+Log base 2: 
+
+- Shannon thought that the information content of anything can be measured in bits. To write a number N in bits, we need to take a log base 2 of N.
+- used as the intuition behind it as that the series of question to tackle the right answer looks like decision tree (yes, no)
+so number of question of tree log k is long2(NO questions)
+
+
+Formula: - Sum( P(i) * log2(P(i)) )
+

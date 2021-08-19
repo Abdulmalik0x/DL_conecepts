@@ -1,0 +1,5 @@
+    The latent space is simply a representation of compressed data in which similar data points are closer together in space.
+    Latent space is useful for learning data features and for finding simpler representations of data for analysis.
+    We can understand patterns or structural similarities between data points by analyzing data in the latent space, be it through manifolds, clustering, etc.
+    We can interpolate data in the latent space, and use our model’s decoder to ‘generate’ data samples.
+    We can visualize the latent space using algorithms such as t-SNE and LLE, which takes our latent space representation and transforms it into 2D or 3D.

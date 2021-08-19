@@ -1,0 +1,3 @@
+contrastive learning is to learn representations such that similar samples stay close to each other, while dissimilar ones are far apart
+
+contrastive loss takes a pair of inputs (xi,xj) and minimizes the embedding distance when they are from the same class but maximizes the distance otherwise.

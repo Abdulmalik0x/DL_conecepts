@@ -1,0 +1,6 @@
+Total Pixels for both images combined = 200 
+Foreground (Car): Area of Overlap = 0
+(2 * Area of Overlap)/(total pixels combined) = 0/200 = 0
+Background: Area of Overlap = 82
+(2 * Area of Overlap)/(total pixels combined) = 82*2/200 = 0.82
+Dice = (Foreground+ Background)/2 = (0%+82%)/2 = 41%

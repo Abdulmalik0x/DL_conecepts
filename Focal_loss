@@ -1,0 +1,10 @@
+It solving the problem of unbalance data where some classes are minority.
+
+It reduces the loss for easy example and vice versa.
+
+Is a function used to emphasize more as loss calculation weight more on hard examples than easy examples based on their confidence score.
+
+It have parameter the distribute focus of model and foreground and background.
+
+- FL(Pl) = -(1- Pl)^gama log(Pl)
+- CE(Pl) = -log(Pi)

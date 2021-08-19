@@ -1,0 +1,5 @@
+In filter pruning we use some criterion to determine which filters are important and which are not. 
+
+From paper: Learning Filter Pruning Criteriafor Deep Convolutional Neural Networks Acceleration
+
+Specifically, wedevelop a differentiable pruning criteria sampler.

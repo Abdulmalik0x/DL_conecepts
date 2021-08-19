@@ -1,0 +1,27 @@
+Skip Connection: 
+
+We hypothesize that itis easier to optimize the residual mapping than to optimizethe original, unreferenced mapping.
+
+Skip connection via addition (Resnet):
+So instead of learning features only, network will try by punishing deviation from the orignal image, also insure utilizing the inital learned featured.
+- It improve the backbropogation for the network since it's derivative for addition enure the main loss adding to all layers so no gradient vanishing.
+- Early extracted semantic information helpful for later segmentation since it help for extracted tiny early extraction.
+
+
+Skip connection via concatenation (Densnet):
+Adding new chanels(dim) for later layers with same d*d spatial dimenssions.
+- It ensure the reusability of information across the network.
+
+
+
+For U-net: Skip connections in the encoder-decoded architecture, fine-grained details can be recovered in the prediction.
+
+Short skip connections are used along with consecutive convolutional layers that do not change the input dimension (see Res-Net), 
+while long skip connections usually exist in encoder-decoder architectures. 
+It is known that the global information (shape of the image and other statistics) resolves what, while local information resolves where (small details in an image patch).
+
+long skip connections are used to pass features from the encoder path to the decoder path in order to recover spatial information lost during downsampling. 
+Short skip connections appear to stabilize gradient updates in deep architectures.
+
+
+resource: https://theaisummer.com/skip-connections/

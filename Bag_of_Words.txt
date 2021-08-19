@@ -1,0 +1,11 @@
+Is the process of binarizing sentences of the same length and converting them into vectors
+
+- Example:
+
+Let’s recall the three types of movie reviews we saw earlier:
+
+Review 1: This movie is very scary and long
+Review 2: This movie is not scary and is slow
+Review 3: This movie is spooky and good
+We will first build a vocabulary from all the unique words in the above three reviews. The vocabulary consists of these 11 words: ‘This’, ‘movie’, ‘is’, ‘very’, ‘scary’, ‘and’, ‘long’, ‘not’,  ‘slow’, ‘spooky’,  ‘good’.
+

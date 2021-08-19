@@ -1,0 +1,11 @@
+Bayes Theorem / Bayes Rule
+P(A|B) = P(B|A) ⋅ P(A) / P(B)
+
+Bayesian Inference: Bayesian Inference is when we use Bayes Rule to obtain the conditional probability or to obtain the posterior of some parameter given the data, P(Y|X) above. This is just general application of the statement above, but X is taken to represent the observed data.
+
+Naive Bayes: Similarly to Bayesian Inference, `Naive Bayes', X represents the feature data and Y represents the classification labels. Naturally, we aim to find P(Y|X). The 'Naive' part comes from the assumption of independence between features.
+
+
+Bayesian Linear Regression: The aim of Bayesian Linear Regression is not to find the single “best” value of the model parameters, but rather to determine the posterior distribution for the model parameters.
+
+P(B|y,X) = likelihood of the data P(y|B,X) * prior probability of the parameters P(B|X) / Norm P(y|X)

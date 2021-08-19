@@ -1,0 +1,20 @@
+- Exponentially weighted averages:
+
+Including a data from previous events and weight them.
+
+vt = Beta Vt-1 + (1-Beta) Theta t 
+Exp: 
+
+V0 = 0
+V1 = 0.9 V0 + 0.1 01
+
+Theta = current data point
+
+- Gradient Descent with Momentum
+
+Compute weighted average and use that gradient to update your weight instead.
+
+It help taking bigger steps toward the steep direction of the loss curvature
+
+Vdw = B VdW + (1-B) dW
+W := W - a VdW, b:= b - a VdB 

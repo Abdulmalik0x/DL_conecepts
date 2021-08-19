@@ -1,0 +1,6 @@
+Classification can be defined as identification
+at the basic level.
+• Fine-grained classification is at a subordinate
+level.
+– Instances from the same basic level category
+– Share parts == visually similar

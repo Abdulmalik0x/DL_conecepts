@@ -1,0 +1,17 @@
+It's proposed to address the issue of speed in double stage nets for real time segmentation:
+
+YOLACT  breaks  up  in-stance  segmentation  into  two  parallel  tasks:   
+(1) generating a dictionary of non-local prototype masks over the entire image, 
+(2) predicting a set of linear combination coefficients per instance.
+
+It add a parallel branch to existing one stage detector after the neck, 
+1- Protonet mask, which in turn will generate set of masks image sized and doesn't depend on any instance.
+2- add extra head to object detection to predict a vector of "Mask coefficients" for each anchor that encode an instance’s representation in the prototype space (object class), each vector length is equivalent to the number of predicted masks.
+At the end, those bbox predictions that pass nms will be incoroporated with masks and add similars together, opposite will be subtracted.
+
+After merge, croped region according to the predicted bbox while the values from the mask region, thresholding and taraaa.
+
+
+Mask coefficients: it's an extra branch on top of anchor predictions which have two heads, so instead of 4 + confidence, it will be 4 (bx, by ..) + c + k (per number of masks), so it's coffiecent per mask, and per prediction, we loop over those predicted masks and add together masks whom cofficents are similar, and subtract the rest. therefore, construct a mask for that instance bilinearly combining the work of these two branches
+
+
